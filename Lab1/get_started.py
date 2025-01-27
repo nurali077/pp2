@@ -1,1 +1,3 @@
-print("Alpysbai tatak")
+import sys
+
+print(sys.version)
