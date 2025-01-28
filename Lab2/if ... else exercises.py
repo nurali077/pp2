@@ -29,13 +29,13 @@ else:
     print("3")
     
 #exercise 5
-if a == b and c == d:
-  print("Hello")
+if a == b and c  == d:
+    print("Hello")
   
   
 #exercise 6
 if a == b or c == d:
-  print("Hello")
+    print("Hello")
   
 #exercise 7
 if 5 > 2:
