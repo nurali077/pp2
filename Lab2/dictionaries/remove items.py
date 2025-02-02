@@ -1,41 +1,41 @@
-#exercise 1
-car =	{
+#1
+thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-print(car.get("model"))
-
-#exercise 2
-car =	{
+thisdict.pop("model")
+print(thisdict)
+#2
+thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-car["year"] = 2020
+thisdict.popitem()
+print(thisdict)
 
-#exercise 3
-car =	{
+#3
+thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-car["color"] = "red"
-
-#exercise 4
-car =	{
+del thisdict["model"]
+print(thisdict)
+#4
+thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-car.pop("model")
-
-#exercise 5
-car =	{
+del thisdict
+print(thisdict) 
+#5
+thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-car.clear()
-
-
+thisdict.clear()
+print(thisdict)
