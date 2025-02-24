@@ -7,9 +7,9 @@ def match_string(text):
     else:
         return False
 
-# Test cases
-print(match_string("a"))      # True
-print(match_string("ab"))     # True
-print(match_string("abb"))    # True
-print(match_string("ac"))     # False
-print(match_string("b"))      # False
+
+print(match_string("a"))   
+print(match_string("ab"))     
+print(match_string("abb"))    
+print(match_string("ac"))     
+print(match_string("b"))   
