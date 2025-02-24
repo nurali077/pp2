@@ -1,15 +1,11 @@
 import re
 
-def match_string(text):
-    pattern = r'a(b*)'
-    if re.fullmatch(pattern, text):
-        return True
+pattern = r"ab*"
+
+test_strings = ["a", "ab", "abb", "ac", "b", ""]
+
+for string in test_strings:
+    if re.fullmatch(pattern, string):
+        print(f"'{string}' соответствует шаблону")
     else:
-        return False
-
-
-print(match_string("a"))   
-print(match_string("ab"))     
-print(match_string("abb"))    
-print(match_string("ac"))     
-print(match_string("b"))   
+        print(f"'{string}' не соответствует шаблону")
