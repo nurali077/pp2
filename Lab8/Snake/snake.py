@@ -7,11 +7,11 @@ screen = pygame.display.set_mode((700, 600))
 pygame.display.set_caption("Snake")
 clock = pygame.time.Clock()
 
-theme_music = pygame.mixer.Sound( "music.mp3" )
+theme_music = pygame.mixer.Sound(r"C:\Users\sotsi\pp2\Lab8\Snake\music.mp3" )
 theme_music.play()
 
 grid_size = 50
-background = pygame.image.load("bg.jpg")
+background = pygame.image.load(r"C:\Users\sotsi\pp2\Lab8\Snake\bg.jpg")
 screen.blit(background, (0, 0))
 
 current_pos = [[350, 300]]
@@ -39,7 +39,7 @@ while not done:
             done = True
         if event.type == pygame.KEYDOWN:
 
-            pygame.mixer.music.load( "move.mp3" )
+            pygame.mixer.music.load(r"C:\Users\sotsi\pp2\Lab8\Snake\move.mp3" )
             pygame.mixer.music.play(1)
 
             if event.key == pygame.K_DOWN and direction != pygame.K_UP:
@@ -94,7 +94,7 @@ while not done:
     
     if current_pos[0][0] == grape_x and current_pos[0][1] == grape_y:
         food_score +=1
-        pygame.mixer.music.load("food.mp3")
+        pygame.mixer.music.load(r"C:\Users\sotsi\pp2\Lab8\Snake\food.mp3")
         
         pygame.mixer.music.play(1)
 
@@ -135,7 +135,7 @@ while not done:
         
 
         theme_music.stop()
-        pygame.mixer.music.load("gameover.mp3")
+        pygame.mixer.music.load(r"C:\Users\sotsi\pp2\Lab8\Snake\gameover.mp3")
         pygame.mixer.music.play(1)
         
         screen.fill( (10,95,56) )
